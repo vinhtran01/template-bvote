@@ -1,0 +1,161 @@
+main {
+    background: #f4f5fa;
+    overflow  : hidden;
+
+    .choose-decs {
+        &::after {
+            content      : '';
+            display      : block;
+            position     : absolute;
+            border-bottom: 2px solid;
+            border-left  : 2px solid;
+            width        : 33px;
+            height       : 30px;
+            bottom       : 0px;
+            left         : 0px;
+            color        : #00dfae;
+        }
+
+        &::before {
+            content      : '';
+            display      : block;
+            position     : absolute;
+            border-bottom: 2px solid;
+            border-right : 2px solid;
+            width        : 33px;
+            height       : 30px;
+            bottom       : 0px;
+            right        : 0;
+            color        : #00dfae;
+        }
+
+
+
+        .choose-text {
+            display    : block;
+            color      : #000;
+            font-size  : 13px;
+            font-family: 'Poppins-regu';
+            text-align : justify;
+            line-height: 17px;
+            padding    : 11px 19px;
+
+            &.two {
+                text-align     : justify;
+                text-align-last: right;
+            }
+
+            &::after {
+                content    : '';
+                display    : block;
+                position   : absolute;
+                border-top : 2px solid;
+                border-left: 2px solid;
+                width      : 33px;
+                height     : 30px;
+                top        : 0px;
+                left       : 0px;
+                color      : #00dfae;
+            }
+
+            &::before {
+                content     : '';
+                display     : block;
+                position    : absolute;
+                border-top  : 2px solid;
+                border-right: 2px solid;
+                width       : 33px;
+                height      : 30px;
+                top         : 0px;
+                right       : 0;
+                color       : #00dfae;
+            }
+
+            &:hover {
+                background: #fff;
+            }
+        }
+    }
+
+    .sytem-ho-item {
+        position: relative;
+
+        &::before {
+            content      : "";
+            position     : absolute;
+            border-bottom: 3px solid;
+            border-right : 3px solid;
+            width        : 33px;
+            height       : 30px;
+            bottom       : 0px;
+            right        : 0;
+            color        : #00dfae;
+        }
+
+        &::after {
+            content      : '';
+            position     : absolute;
+            border-bottom: 3px solid;
+            border-left  : 3px solid;
+            width        : 33px;
+            height       : 30px;
+            bottom       : 0px;
+            left         : 0px;
+            color        : #00dfae;
+        }
+
+        .sytem-title {
+
+            &::before {
+                content     : '';
+                display     : block;
+                position    : absolute;
+                border-top  : 3px solid;
+                border-right: 3px solid;
+                width       : 30px;
+                height      : 30px;
+                top         : 0;
+                right       : 0;
+                color       : #00dfae;
+            }
+
+            &::after {
+                content    : '';
+                display    : block;
+                position   : absolute;
+                border-top : 3px solid;
+                border-left: 3px solid;
+                width      : 33px;
+                height     : 30px;
+                top        : 0;
+                left       : 0;
+                color      : #00dfae;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    main {
+        .choose-decs {
+            .choose-text {
+                &.two {
+                    text-align-last: unset;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    main {
+        .choose-decs {
+            .choose-text {
+                &.two {
+                    text-align-last: unset;
+                }
+            }
+        }
+    }
+}
